@@ -6,7 +6,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private String department;
-    private String companySuffix = ".company.com";
+    private String companySuffix = ".uwe.com";
 
     private String password;
 
