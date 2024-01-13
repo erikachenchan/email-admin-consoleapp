@@ -61,7 +61,7 @@ public class Person {
     // firstName.lastName@department.company.com
     @Override
     public String toString() {
-        return "Email:  { " + "username= " + username + " | " + firstName + "." + lastName + "@" + department + companySuffix + " |  email password =" + password + '}';
+        return "Email: {" + "username= " + username + " | " + firstName + "." + lastName + "@" + department + companySuffix + " |  email password =" + password + '}';
     }
 
 

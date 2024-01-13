@@ -1,6 +1,4 @@
 # Email Application
-Exercises can be found here: https://www.udemy.com/course/practice-java-by-building-projects/
-
 Scenario: Your are an IT Support Administrator Specialist and are in charged with the task of creating email accounts for new hires.
 
 Your application should do the following:
