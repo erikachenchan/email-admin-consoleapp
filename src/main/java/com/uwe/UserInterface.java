@@ -2,8 +2,11 @@ package com.uwe;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class UserInterface {
+
+    public static final Logger logger = Logger.getLogger(UserInterface.class.getName());
 
     private Email emailList;
     private Scanner scanner;
@@ -30,7 +33,7 @@ public class UserInterface {
     }
 
     public void addEmployee() {
-        System.out.println("Enter university id");
+        System.out.println("Enter university id: ");
         String username = scanner.nextLine();
         String generatedUsername = generateUserName(username);
 
@@ -52,7 +55,7 @@ public class UserInterface {
 
         // Add the Person object to the emailList
         emailList.addList(person);
-        System.out.println("New employee has been added!");
+        logger.info("New employee has been added!");
     }
 
     public void printAllDetails() {
@@ -88,7 +91,6 @@ public class UserInterface {
 
         if (matchingEmployees.size() == 1) {
 
-
             System.out.println("Enter new first name: ");
             String newFirstName = scanner.nextLine();
 
@@ -103,7 +105,7 @@ public class UserInterface {
 
         } else {
             // Return a message stating that no employees found with the specified first name
-            System.out.println("No employee found with the specified first name. Please try again!");
+            logger.info("No employee found with the specified first name. Please try again!");
         }
     }
 
@@ -117,8 +119,7 @@ public class UserInterface {
         if (matchingEmployees.size() == 1) {
             emailList.deleteEmployeeByUsername(uNameInput);
         } else {
-            System.out.println("Employee not found. Please enter a valid username of employee you want to remove!");
-
+            logger.info("Employee not found. Please enter a valid username of employee you want to remove!");
         }
     }
 
@@ -144,7 +145,7 @@ public class UserInterface {
             if (newPass.equals(confirmPass)) {
                 emailList.updatePassword(confirmPass);
             } else {
-                System.out.println("Password does not match, try again!");
+                logger.info("Password does not match, try again!");
             }
         }
 

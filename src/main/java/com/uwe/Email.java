@@ -1,8 +1,11 @@
 package com.uwe;
 
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class Email {
+
+    public static final Logger logger = Logger.getLogger(Email.class.getName());
 
     private ArrayList<Person> personArrayList;
 
@@ -35,11 +38,10 @@ public class Email {
             person.setLastName(newLastName);
             person.setDepartment(newDepartment);
 
-            System.out.println("Employee updated successfully!");
-            return; // Exit the loop once the update is done
+            logger.info("Employee updated successfully!");
         }
-        // If the loop completes without finding a matching email, print a message
-        System.out.println("Employee not found. Please enter a valid email address.");
+        // If the loop completes without finding a matching username, print a message
+        logger.info("Employee username not found. Please enter a valid username.");
     }
 
     // Method to retrieve a List person objects whose username name match a string input.
@@ -66,8 +68,7 @@ public class Email {
             if (person.getUsername().equalsIgnoreCase(uName)) {
                 // Remove the matching person from the list
                 personArrayList.remove(person);
-                System.out.println("Employee deleted successfully!");
-
+                logger.info("Employee deleted successfully!");
                 return; // Exit the loop once the deletion is done
             }
         }
@@ -76,9 +77,7 @@ public class Email {
     public void updatePassword(String updatedPassword) {
         for (Person p : personArrayList) {
             p.setPassword(updatedPassword);
-            System.out.println("Password has been changed successfully!");
-
-            return;
+            logger.info("Password has been changed successfully!");
         }
     }
 }
