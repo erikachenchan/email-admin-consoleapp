@@ -17,9 +17,10 @@ public class UserInterface {
         System.out.println("");
         System.out.println("==== Welcome to UWE Staff portal ====");
         System.out.println(" 1 - Create New Email");
-        System.out.println(" 2 - List of Employees Emails");
+        System.out.println(" 2 - Display All Employees Emails");
         System.out.println(" 3 - Update Employee Email details");
-        System.out.println(" 4 - Delete an Employee Email");
+        System.out.println(" 4 - Delete Employee Email");
+        System.out.println(" 5 - Update Employee Password");
         System.out.println(" 0 - Exit");
 
     }
@@ -127,6 +128,27 @@ public class UserInterface {
         return new String(universityId + username);
     }
 
+    public void updateEmployeePassword() {
+        System.out.println("Type the username of the UWE staff: ");
+        String uNameInput = scanner.nextLine();
+
+        ArrayList<Person> matchPerson = emailList.getEmployeesByUsername(uNameInput);
+
+        if (matchPerson.size() == 1) {
+            System.out.println("Enter a new password: ");
+            String newPass = scanner.nextLine();
+
+            System.out.println("Confirm a new password: ");
+            String confirmPass = scanner.nextLine();
+
+            if (newPass.equals(confirmPass)) {
+                emailList.updatePassword(confirmPass);
+            } else {
+                System.out.println("Password does not match, try again!");
+            }
+        }
+
+    }
 
     public void start() {
         while (true) {
@@ -153,6 +175,10 @@ public class UserInterface {
 
                 if (userInputCommand == 4) {
                     deleteEmployee();
+                }
+
+                if (userInputCommand == 5) {
+                    updateEmployeePassword();
                 }
 
             } catch (Exception e) {

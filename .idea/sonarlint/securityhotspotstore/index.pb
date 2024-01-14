@@ -1,16 +1,6 @@
 
-S
-#src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-T
-$src/main/java/org/example/Email.java,8\6\868dc191ec65cf2d4efce9535a996c406e23449a
-[
-+src/main/java/org/example/MainEmailApp.java,a\9\a95797f7e44e40cbaf3b903ff592022686c282af
-U
-%src/main/java/org/example/Person.java,d\7\d7cef7fca7b9350830c521bba16c082063341c26
-\
-,src/main/java/org/example/UserInterface.java,8\f\8fa41e63b64d85c8e568fd2f74558b626e4dac3e
 W
 'src/main/java/com/uwe/MainEmailApp.java,5\f\5fe424890920de2984edb65281f07a03a50bcb6e
 P
@@ -23,3 +13,7 @@ X
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e

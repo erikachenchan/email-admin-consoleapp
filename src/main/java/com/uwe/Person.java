@@ -58,6 +58,10 @@ public class Person {
         this.companySuffix = companySuffix;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     // firstName.lastName@department.company.com
     @Override
     public String toString() {

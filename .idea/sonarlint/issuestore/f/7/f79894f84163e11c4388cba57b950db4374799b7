@@ -1,28 +1,33 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(Ò®­ıûÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(¥¬ª÷ûÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(ãÛâ‰şÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(ıÂ ÿÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(ô×ñÁıÿÿÿÿ
-@	java:S106"+Replace this use of System.out by a logger.(ôêÅ†
-E	java:S106"+Replace this use of System.out by a logger.(î‡ó©ùÿÿÿÿ
-@	java:S106 "+Replace this use of System.out by a logger.(šÄœò
-@	java:S106$"+Replace this use of System.out by a logger.(¢´Ï…
-@	java:S106'"+Replace this use of System.out by a logger.(ºÑÉç
-E	java:S106*"+Replace this use of System.out by a logger.(”©Û…üÿÿÿÿ
-E	java:S106-"+Replace this use of System.out by a logger.(¨ÙƒÖúÿÿÿÿ
-@	java:S1066"+Replace this use of System.out by a logger.(ƒÂ‡«
-?
-java:S2140G")Use "java.util.Random.nextInt()" instead.(Â““í
-E	java:S106R"+Replace this use of System.out by a logger.(‰µ»¿ûÿÿÿÿ
-E	java:S106["+Replace this use of System.out by a logger.(…«Æäøÿÿÿÿ
-@	java:S106^"+Replace this use of System.out by a logger.(«÷Ğ 
-@	java:S106a"+Replace this use of System.out by a logger.(©ïÛô
-E	java:S106i"+Replace this use of System.out by a logger.(¼Áú½ıÿÿÿÿ
-@	java:S106n"+Replace this use of System.out by a logger.(Ï«ƒ¥
-E	java:S106w"+Replace this use of System.out by a logger.(¿Û¿÷ûÿÿÿÿ
-6
-java:S2129" Remove this "String" constructor(ÿŸğá
-A	java:S106Ÿ"+Replace this use of System.out by a logger.(ğ‰Ÿ€
-F	java:S106 "+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
+L	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8ƒ¸«Ğ1
+L	java:S106"+Replace this use of System.out by a logger.(Ò®­ıûÿÿÿÿ8ƒ¸«Ğ1
+L	java:S106"+Replace this use of System.out by a logger.(¥¬ª÷ûÿÿÿÿ8ƒ¸«Ğ1
+L	java:S106"+Replace this use of System.out by a logger.(™‘é´úÿÿÿÿ8ƒ¸«Ğ1
+L	java:S106"+Replace this use of System.out by a logger.(ıÂ ÿÿÿÿÿ8Ÿƒ¸«Ğ1
+G	java:S106"+Replace this use of System.out by a logger.(ù²éÓ8Ÿƒ¸«Ğ1
+G	java:S106"+Replace this use of System.out by a logger.(ßÌà´8Ÿƒ¸«Ğ1
+G	java:S106"+Replace this use of System.out by a logger.(ôêÅ†8Ÿƒ¸«Ğ1
+L	java:S106"+Replace this use of System.out by a logger.(î‡ó©ùÿÿÿÿ8Ÿƒ¸«Ğ1
+G	java:S106!"+Replace this use of System.out by a logger.(šÄœò8Ÿƒ¸«Ğ1
+G	java:S106%"+Replace this use of System.out by a logger.(¢´Ï…8 ƒ¸«Ğ1
+G	java:S106("+Replace this use of System.out by a logger.(ºÑÉç8 ƒ¸«Ğ1
+L	java:S106+"+Replace this use of System.out by a logger.(”©Û…üÿÿÿÿ8 ƒ¸«Ğ1
+L	java:S106."+Replace this use of System.out by a logger.(¨ÙƒÖúÿÿÿÿ8 ƒ¸«Ğ1
+G	java:S1067"+Replace this use of System.out by a logger.(ƒÂ‡«8¡ƒ¸«Ğ1
+F
+java:S2140H")Use "java.util.Random.nextInt()" instead.(Â““í8¢ƒ¸«Ğ1
+L	java:S106S"+Replace this use of System.out by a logger.(‰µ»¿ûÿÿÿÿ8£ƒ¸«Ğ1
+L	java:S106\"+Replace this use of System.out by a logger.(…«Æäøÿÿÿÿ8£ƒ¸«Ğ1
+G	java:S106_"+Replace this use of System.out by a logger.(«÷Ğ 8£ƒ¸«Ğ1
+G	java:S106b"+Replace this use of System.out by a logger.(©ïÛô8¤ƒ¸«Ğ1
+L	java:S106j"+Replace this use of System.out by a logger.(¼Áú½ıÿÿÿÿ8¤ƒ¸«Ğ1
+G	java:S106o"+Replace this use of System.out by a logger.(Ï«ƒ¥8¤ƒ¸«Ğ1
+L	java:S106x"+Replace this use of System.out by a logger.(¿Û¿÷ûÿÿÿÿ8¥ƒ¸«Ğ1
+>
+java:S2129€" Remove this "String" constructor(ÿŸğá8¥ƒ¸«Ğ1
+M	java:S106„"+Replace this use of System.out by a logger.(Àğêüùÿÿÿÿ8¥ƒ¸«Ğ1
+M	java:S106Š"+Replace this use of System.out by a logger.(òÂ«åùÿÿÿÿ8¦ƒ¸«Ğ1
+M	java:S106"+Replace this use of System.out by a logger.(øªÒˆúÿÿÿÿ8¦ƒ¸«Ğ1
+M	java:S106“"+Replace this use of System.out by a logger.(»»øÿÿÿÿÿ8¨ƒ¸«Ğ1
+H	java:S106¹"+Replace this use of System.out by a logger.(ğ‰Ÿ€8º«Ğ1
+M	java:S106º"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8œ½Ã«Ğ1

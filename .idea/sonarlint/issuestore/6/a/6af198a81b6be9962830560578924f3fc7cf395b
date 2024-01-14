@@ -9,3 +9,6 @@ L
 java:S1751'"6Remove this "return" statement or make it conditional.(ï«®Ë
 @	java:S106*"+Replace this use of System.out by a logger.(‚õŸ
 E	java:S106E"+Replace this use of System.out by a logger.(€ÉàÏúÿÿÿÿ
+L	java:S106O"+Replace this use of System.out by a logger.(†Âœùÿÿÿÿ8şş©«Ğ1
+S
+java:S1751Q"6Remove this "return" statement or make it conditional.(ûÁİ…8Í´««Ğ1

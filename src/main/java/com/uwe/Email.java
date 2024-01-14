@@ -72,5 +72,14 @@ public class Email {
             }
         }
     }
+
+    public void updatePassword(String updatedPassword) {
+        for (Person p : personArrayList) {
+            p.setPassword(updatedPassword);
+            System.out.println("Password has been changed successfully!");
+
+            return;
+        }
+    }
 }
 
