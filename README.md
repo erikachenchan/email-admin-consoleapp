@@ -1,7 +1,7 @@
 # Email Application
 
 Scenario: You are an IT Support Administrator Specialist and are in charged with the task of creating email accounts
-for new hires.
+for new UWE staff/hires.
 
 Your application should do the following:
 
