@@ -8,7 +8,7 @@ public class UserInterface {
 
     public static final Logger logger = Logger.getLogger(UserInterface.class.getName());
 
-    private Email emailList;
+    private final Email emailList;
     private Scanner scanner;
 
     public UserInterface(Email emailList, Scanner scanner) {
@@ -21,7 +21,7 @@ public class UserInterface {
         System.out.println("==== Welcome to UWE Staff portal ====");
         System.out.println(" 1 - Create New Email");
         System.out.println(" 2 - Display All Employees Emails");
-        System.out.println(" 3 - Update Employee Email details");
+        System.out.println(" 3 - Update Employee Email Details");
         System.out.println(" 4 - Delete Employee Email");
         System.out.println(" 5 - Update Employee Password");
         System.out.println(" 0 - Exit");
@@ -90,7 +90,6 @@ public class UserInterface {
         ArrayList<Person> matchingEmployees = emailList.getEmployeesByUsername(uName);
 
         if (matchingEmployees.size() == 1) {
-
             System.out.println("Enter new first name: ");
             String newFirstName = scanner.nextLine();
 
@@ -102,10 +101,8 @@ public class UserInterface {
 
             // Update the employee information
             emailList.updateEmployee(newFirstName, newLastName, newDepartment);
-
-        } else {
-            // Return a message stating that no employees found with the specified first name
-            logger.info("No employee found with the specified first name. Please try again!");
+        } else if (matchingEmployees.isEmpty()) {
+            System.out.println("Employee not found.");
         }
     }
 
@@ -115,11 +112,13 @@ public class UserInterface {
 
         // The code uses the getEmployeesByUsername method of the Email class to retrieve a list of employees whose username match the user's input. This method returns an ArrayList<Person> containing all employees with the specified username.
         ArrayList<Person> matchingEmployees = emailList.getEmployeesByUsername(uNameInput);
+        if (matchingEmployees.isEmpty()) {
+            logger.info("Employee not found. Please enter a valid username of employee you want to remove!");
+        }
+
         // The code checks if there is exactly one employee in the matchingEmployees list. If there is only one match, it calls the deleteEmployeeByUsername method of the Email class, passing the first name as an argument to delete that specific employee.
         if (matchingEmployees.size() == 1) {
             emailList.deleteEmployeeByUsername(uNameInput);
-        } else {
-            logger.info("Employee not found. Please enter a valid username of employee you want to remove!");
         }
     }
 
@@ -135,6 +134,9 @@ public class UserInterface {
 
         ArrayList<Person> matchPerson = emailList.getEmployeesByUsername(uNameInput);
 
+        if (matchPerson.isEmpty()){
+            System.out.println("Employee record is empty!");
+        }
         if (matchPerson.size() == 1) {
             System.out.println("Enter a new password: ");
             String newPass = scanner.nextLine();
